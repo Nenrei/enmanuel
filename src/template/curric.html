@@ -1,0 +1,58 @@
+<div class="inner cover" id="curriculum" ng-controller="curriculumController as cc">
+	<div id="data">
+		<h4><a href="/">{{cc.personalData.name}}</a></h4>
+		<p>{{cc.personalData.birth}}</p>
+        <p><a href="mailto:contacto@enmanuelvalencia.com">{{cc.personalData.mail}}</a></p>
+	</div>
+    
+    <div class="big-card">
+        <h4>Education</h4>
+        <div id="education">
+            <ng-include src="'template/curriccard.html'" ng-repeat = "e in cc.educList"/>
+        </div>
+    </div>
+
+    <div class="big-card">
+        <h4>Experience</h4>
+        <div id="jobs">
+            <ng-include src="'template/curriccard.html'" ng-repeat = "e in cc.jobList"/>
+        </div>
+    </div>
+    
+    <div class="big-card">
+        <h4>Comp. Education</h4>
+        <div id="comp-education">
+            <div  class="curr-card"  ng-repeat = "e in cc.compEducList">
+                <div class="curr-period">
+                    {{e.year}}
+                </div>
+                <div class="curr-content">
+                    <p>{{e.description}}<span class="desc">.&nbsp;{{e.hours}}Hours</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="big-card">
+        <h4>Tec. Knowledge</h4>
+        <div id="knowledge">
+            <div  class="curr-card"  ng-repeat = "e in cc.knowledgeList">
+                <div class="curr-content">
+                    <p>{{e.category}}</p>
+                    <p ng-repeat = "t in e.tec" class="desc">{{t}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="big-card">
+        <h4>Other Data of Interest</h4>
+        <div id="other-data">
+            <div  class="curr-card">
+                <div class="curr-content">
+                    <p ng-repeat = "d in cc.interestDataList">{{d}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

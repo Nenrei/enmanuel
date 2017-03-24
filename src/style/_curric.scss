@@ -1,0 +1,107 @@
+#curriculum{
+	margin:0px auto;
+	max-width: 650px;
+    
+    h4{
+        text-align: left;
+        border-bottom: 1px solid;
+    }
+    
+    #data{
+        h4{
+            text-align: center;
+            border-style: none;
+        }
+    }
+    
+    p{
+        font-size: medium;
+    }
+}
+
+.big-card{
+	margin-top: 30px;
+    
+    div{
+        overflow: hidden;
+    }   
+}
+
+
+.curr-card{ 
+    div{
+        padding: 10px;
+        padding-bottom: 5px;
+    }
+}
+
+.curr-period{
+	text-align: right;
+	float:left;
+	min-width: 120px;
+    padding-left: 0px !important;
+    p{
+        font-size: medium !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .desc{
+        font-size: small !important;
+        color: #BABABA;
+    }
+}
+
+.curr-content {
+	border-left: 1px solid;
+	font-size: medium !important;
+	text-align: left;
+	float: left;
+	width: 80%;
+    .desc{
+        font-size: small !important;
+        color: #BABABA;
+    }
+}
+
+#knowledge, #other-data{
+    .curr-content{
+        border-style: none;
+        padding: 0px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .desc{
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+	.curr-card div{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    .curr-period {
+        padding-top: 10px !important;
+        padding-left: 10px !important;
+		border-bottom: 1px solid;
+		border-left: 1px solid;
+		text-align: left;
+		margin-left: 20px;
+		float: none;
+		p{
+            float: left;
+        }
+        .desc{
+            margin-left: 10px !important;
+            margin-top: 3px !important;
+        }
+	}
+	.curr-content {
+		margin-left: 20px;
+		text-align: left;
+		float: none;
+		width: 100%;
+	} 
+}
+
