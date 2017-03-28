@@ -1,9 +1,9 @@
 angular.module("myApp").controller('curriculumController', function() {
     var me = this;
-	
+	 
     me.personalData = {
         name: "Enmanuel Valencia Vilela",
-        birth: "08 September 1992, A Coruña, Galicia, Spain",
+        birth: "CURRIC.PERS_DATA.BIRTH",
         mail: "contact@enmanuelvalencia.com"
     };
 
@@ -11,20 +11,20 @@ angular.module("myApp").controller('curriculumController', function() {
         {
 			startYear: 2013,
 			endYear: 2013,
-            duration: "2 months",
-			center: "Grupo Tecnológico Artabria",
-			place: "Ferrol",
-			job: "Practicas",
-			description: "Development of two simple Android aplications. One so that the employees could see their assigned tasks and another to be able to consult the billing of one or several companies in graphs."
+            duration: "CURRIC.JOBS.0.DURATION",
+			center: "CURRIC.JOBS.0.CENTER",
+			place: "CURRIC.JOBS.0.PLACE",
+			job: "CURRIC.JOBS.0.JOB",
+			description: "CURRIC.JOBS.0.DESC"
 		},
 		{
 			startYear: 2014,
 			endYear: null,
-            duration: "3 years",
-			center: "Indra Software Labs",
-			place: "A Coruña",
-			job: "Frontend developer",
-			description: "Development of InCMS, a web application to manage all the commercial cicle of an energy company(payment, billing, customer service, etc)."
+            duration: "CURRIC.JOBS.1.DURATION",
+			center: "CURRIC.JOBS.1.CENTER",
+			place: "CURRIC.JOBS.1.PLACE",
+			job: "CURRIC.JOBS.1.JOB",
+			description: "CURRIC.JOBS.1.DESC"
 		}
 	];
 
@@ -32,47 +32,47 @@ angular.module("myApp").controller('curriculumController', function() {
 		{
 			startYear: 2011,
 			endYear: 2013,
-            duration: "2 years",
-			center: "CIFP Rodolfo Ucha Piñeiro",
-			place: "Ferrol, A Coruña",
-			job: "Senior Technician in Multiplatform Application Development"
+            duration: "CURRIC.EDUC.0.DURATION",
+			center: "CURRIC.EDUC.0.CENTER",
+			place: "CURRIC.EDUC.0.PLACE",
+			job: "CURRIC.EDUC.0.JOB",
 		}
 	];
 
 	me.compEducList = [
 		{
 			year: 2014,
-			description: "Application Development with Java EE6",
+			description: "CURRIC.COMP_EDUC.JAVAEE6",
 			hours: 20
 		},
 		{
 			year: 2015,
-			description: "Java EE5 Patterns",
+			description: "CURRIC.COMP_EDUC.PATTERNS",
 			hours: 15
 		},
 		{
 			year: 2016,
-			description: "Introduction to AngularJS",
+			description: "CURRIC.COMP_EDUC.ANGULAR",
 			hours: 20
 		}
 	];
 
 	me.knowledgeList = [
 		{
-			category: "Frontend Development",
+			category: "CURRIC.KNOWLEDGE.FRONT",
 			tec: [
                 "HTML5, CSS3 (SASS, Bootstrap3)",
                 "Javascript (AngularJS 1.5, ExtJS 4.5/6)"
             ]
 		},
 		{
-			category: "Backend Development",
+			category: "CURRIC.KNOWLEDGE.BACK",
 			tec: [
                 "JavaSE, JavaEE"
             ]
 		},
 		{
-			category: "Other Tools",
+			category: "CURRIC.KNOWLEDGE.OTHER",
 			tec: [
 				"Eclipse, Webstorm, SublimeText",
 				"Adobe Photoshop, Flash, Premiere"
@@ -82,7 +82,7 @@ angular.module("myApp").controller('curriculumController', function() {
 	];
 
 	me.interestDataList = [
-		"Drive license B and own vehicle"
+		"CURRIC.OTHER_DATA.DRIVE"
 	];
 
 
