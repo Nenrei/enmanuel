@@ -7,6 +7,23 @@
 }
 md-card{
 	background-color: #6E6E6E;
+	img{
+		filter: grayscale(50%);
+		transition-duration: .3s;
+	}
+	md-icon{
+		filter: grayscale(50%);
+	}
+}
+
+md-card:hover{
+	img{
+		filter: grayscale(0%);
+		transition-duration: .3s;
+	}
+	md-icon{
+		filter: grayscale(0%);
+	}
 }
 
 .md-headline, .md-subhead{
@@ -30,6 +47,59 @@ md-card-title{
 
 md-card-actions{
 	margin-top: 0px;
+}
+
+.md-icon-button{
+	margin: 0px !important;
+	padding: 0px !important;
+	md-icon{
+		transform: scaleX(-1);
+		transition-duration: .5s;
+	}
+}
+.md-icon-button:hover {
+	md-icon{
+		transform: scaleX(1);
+		transition-duration: .5s;
+	}
+}
+
+.mini-media{
+	display: none;
+}
+
+md-card-actions>div {
+	min-width: 135px;
+	background-color: rgba(255,255,255,0.1);
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px){
+	.mini-media{
+		display: block;
+		width: 50px;
+		float: right;
+		margin: -15px;
+    	margin-top: -25px;
+	}
+	md-card-title-media{
+		display: none;
+	}
+	.md-subhead-small{
+		width: 100%;
+	}
+	.layout-row{
+    	flex-direction: column;
+	}
+
+	md-card{
+		img{
+			filter: grayscale(0%);
+		}
+		md-icon{
+			filter: grayscale(0%);
+		}
+	}
 }
 
 
