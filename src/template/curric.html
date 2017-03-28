@@ -1,44 +1,44 @@
 <div class="inner cover" id="curriculum" ng-controller="curriculumController as cc">
 	<div id="data">
 		<h4><a href="/">{{cc.personalData.name}}</a></h4>
-		<p>{{cc.personalData.birth}}</p>
+		<p translate>{{cc.personalData.birth}}</p>
         <p><a href="mailto:contacto@enmanuelvalencia.com">{{cc.personalData.mail}}</a></p>
 	</div>
     
     <div class="big-card">
-        <h4>Education</h4>
+        <h4 translate>CURRIC.EDUCATION</h4>
         <div id="education">
             <ng-include src="'template/curriccard.html'" ng-repeat = "e in cc.educList"/>
         </div>
     </div>
 
     <div class="big-card">
-        <h4>Experience</h4>
+        <h4 translate>CURRIC.EXPERIENCE</h4>
         <div id="jobs">
             <ng-include src="'template/curriccard.html'" ng-repeat = "e in cc.jobList"/>
         </div>
     </div>
     
     <div class="big-card">
-        <h4>Comp. Education</h4>
+        <h4 translate>CURRIC.COMP_EDUCATION</h4>
         <div id="comp-education">
             <div  class="curr-card"  ng-repeat = "e in cc.compEducList">
                 <div class="curr-period">
                     {{e.year}}
                 </div>
                 <div class="curr-content">
-                    <p>{{e.description}}<span class="desc">.&nbsp;{{e.hours}}Hours</span></p>
+                    <p><span translate>{{e.description}}</span><span class="desc">.&nbsp;{{e.hours}}Hours</span></p>
                 </div>
             </div>
         </div>
     </div>
     
     <div class="big-card">
-        <h4>Tec. Knowledge</h4>
+        <h4 translate>CURRIC.TEC_KNOWLEDGE</h4>
         <div id="knowledge">
             <div  class="curr-card"  ng-repeat = "e in cc.knowledgeList">
                 <div class="curr-content">
-                    <p>{{e.category}}</p>
+                    <p translate>{{e.category}}</p>
                     <p ng-repeat = "t in e.tec" class="desc">{{t}}</p>
                 </div>
             </div>
@@ -46,11 +46,11 @@
     </div>
     
     <div class="big-card">
-        <h4>Other Data of Interest</h4>
+        <h4 translate>CURRIC.OTHER</h4>
         <div id="other-data">
             <div  class="curr-card">
                 <div class="curr-content">
-                    <p ng-repeat = "d in cc.interestDataList">{{d}}</p>
+                    <p ng-repeat = "d in cc.interestDataList" translate>{{d}}</p>
                 </div>
             </div>
         </div>
