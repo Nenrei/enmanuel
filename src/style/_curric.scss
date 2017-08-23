@@ -1,107 +1,137 @@
-#curriculum{
-	margin:0px auto;
-	max-width: 650px;
-    
-    h4{
-        text-align: left;
-        border-bottom: 1px solid;
-    }
-    
-    #data{
-        h4{
-            text-align: center;
-            border-style: none;
-        }
-    }
-    
-    p{
-        font-size: medium;
-    }
+#curriculum {
+  margin: 0px auto;
+  max-width: 650px;
+}
+#curriculum h4 {
+  text-align: left;
+  border-bottom: 1px solid;
+}
+#curriculum #data h4 {
+  text-align: center;
+  border-style: none;
+}
+#curriculum p {
+  font-size: medium;
 }
 
-.big-card{
-	margin-top: 30px;
-    
-    div{
-        overflow: hidden;
-    }   
+.big-card {
+  margin-top: 30px;
+}
+.big-card div {
+  overflow: hidden;
 }
 
-
-.curr-card{ 
-    div{
-        padding: 10px;
-        padding-bottom: 5px;
-    }
+.curr-card div {
+  padding: 10px;
+  padding-bottom: 5px;
 }
 
-.curr-period{
-	text-align: right;
-	float:left;
-	min-width: 120px;
-    padding-left: 0px !important;
-    p{
-        font-size: medium !important;
-        margin: 0px !important;
-        padding: 0px !important;
-    }
-    .desc{
-        font-size: small !important;
-        color: #BABABA;
-    }
+.curr-period {
+  text-align: right;
+  float: left;
+  min-width: 120px;
+  padding-left: 0px !important;
+}
+.curr-period p {
+  font-size: medium !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.curr-period .desc {
+  font-size: small !important;
+  color: #BABABA;
 }
 
 .curr-content {
-	border-left: 1px solid;
-	font-size: medium !important;
-	text-align: left;
-	float: left;
-	width: 80%;
-    .desc{
-        font-size: small !important;
-        color: #BABABA;
-    }
+  border-left: 1px solid;
+  font-size: medium !important;
+  text-align: left;
+  float: left;
+  width: 80%;
+}
+.curr-content .desc {
+  font-size: small !important;
+  color: #BABABA;
 }
 
-#knowledge, #other-data{
-    .curr-content{
-        border-style: none;
-        padding: 0px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-    }
-    .desc{
-        margin-left: 10px;
-        margin-top: -10px;
-    }
+#knowledge .curr-content, #other-data .curr-content {
+  border-style: none;
+  padding: 0px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#knowledge .desc, #other-data .desc {
+  margin-left: 10px;
+  width: 210px;
+  display: inline-block;
+}
+#knowledge .desc span, #other-data .desc span {
+  float: left;
 }
 
-@media only screen and (max-width: 768px){
-	.curr-card div{
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-    .curr-period {
-        padding-top: 10px !important;
-        padding-left: 10px !important;
-		border-bottom: 1px solid;
-		border-left: 1px solid;
-		text-align: left;
-		margin-left: 20px;
-		float: none;
-		p{
-            float: left;
-        }
-        .desc{
-            margin-left: 10px !important;
-            margin-top: 3px !important;
-        }
-	}
-	.curr-content {
-		margin-left: 20px;
-		text-align: left;
-		float: none;
-		width: 100%;
-	} 
+.prog-bar {
+  width: 100px;
+  float: right;
+  border: 1px solid #FFF;
+  height: 15px;
+  padding: 0px !important;
+}
+.prog-bar .prog-bar-colored {
+  background-color: #FFF;
+  height: 100%;
 }
 
+.bar-25 {
+  width: 25%;
+}
+
+.bar-50 {
+  width: 50%;
+}
+
+.bar-75 {
+  width: 75%;
+}
+
+.bar-100 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #curriculum {
+    padding: 0px !important;
+  }
+
+  .curr-card div {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .curr-period {
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    text-align: left;
+    margin-left: 20px;
+    float: none;
+  }
+  .curr-period p {
+    float: left;
+  }
+  .curr-period .desc {
+    margin-left: 10px !important;
+    margin-top: 3px !important;
+  }
+
+  .curr-content {
+    margin-left: 20px;
+    text-align: left;
+    float: none;
+    width: 98%;
+  }
+
+  #knowledge .desc {
+    margin-left: 50px;
+  }
+}
