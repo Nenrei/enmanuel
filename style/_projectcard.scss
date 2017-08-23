@@ -1,0 +1,193 @@
+.md-card-image{
+	width: 100%;
+}
+
+.project-md-card{
+	margin:0px auto;
+}
+md-card{
+	background-color: #6E6E6E;
+	img{
+		filter: grayscale(50%);
+		transition-duration: .3s;
+	}
+	md-icon{
+		filter: grayscale(50%);
+	}
+}
+
+md-card:hover{
+	img{
+		filter: grayscale(0%);
+		transition-duration: .3s;
+	}
+	md-icon{
+		filter: grayscale(0%);
+	}
+}
+
+.md-headline, .md-subhead{
+	color: #fff !important;
+}
+
+.md-subhead-small{
+	font-size: small !important;
+	opacity: 0.5;
+}
+
+hr{
+	width: 75%;
+	margin: 0px auto;
+	opacity: 0.5;
+}
+
+md-card-title{
+	margin-bottom: 0px;
+}
+
+md-card-actions{
+	margin-top: 0px;
+}
+
+.md-icon-button{
+	margin: 0px !important;
+	padding: 0px !important;
+	md-icon{
+		transform: scaleX(-1);
+		transition-duration: .5s;
+	}
+}
+.md-icon-button:hover {
+	md-icon{
+		transform: scaleX(1);
+		transition-duration: .5s;
+	}
+}
+
+.mini-media{
+	display: none;
+}
+
+md-card-actions>div {
+	min-width: 135px;
+	background-color: rgba(255,255,255,0.1);
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px){
+	.mini-media{
+		display: block;
+		width: 50px;
+		float: right;
+		margin: -15px;
+    	margin-top: -25px;
+	}
+	md-card-title-media{
+		display: none;
+	}
+	.md-subhead-small{
+		width: 100%;
+	}
+	.layout-row{
+    	flex-direction: column;
+	}
+
+	md-card{
+		img{
+			filter: grayscale(0%);
+		}
+		md-icon{
+			filter: grayscale(0%);
+		}
+	}
+}
+
+
+/*a:hover{
+	text-decoration: none;
+}
+.gallery{
+	max-width: 100%;
+}
+.prcard *{
+	transition-duration: .4s;
+}
+.prcard{
+	font-size: medium;
+
+	margin: 10px;
+	background-color: #6E6E6E;
+	height: 100px;
+	border-radius: 50px;
+	width: 250px;
+	display: inline-block;
+	transition-duration: .4s;
+}
+.prcard:hover{
+	background-color: #A7A7A7;
+	transition-duration: .4s;
+}
+.prcard:hover img{
+	filter: grayscale(0%);
+}
+
+.prcard:hover .image img{
+	
+}
+
+.prcard img{
+	filter: grayscale(100%);
+}
+
+
+
+
+.image{
+	width: 30%;
+	float:left;
+
+	height: 100px;
+}
+	.image img{
+		width: 100px;
+	}
+
+
+.content{
+	float:left;
+	padding: 10px;
+    width: 70%;
+    height: 100px;
+}
+	.content p{
+		max-width: 150px;
+    	margin: 0px auto;
+	}
+	.content .cardicons{
+		margin-top: 5px;
+	}
+	.content .cardicons a img{
+		transform: scaleX(-1);
+		width: 35px;
+	}
+	.content .cardicons a:hover img{
+		transform: scaleX(1);
+	}
+
+
+
+.description{
+}
+
+@media only screen and (max-width: 768px){
+	.prcard img{
+		filter: grayscale(0%);
+	}
+	.content .cardicons a img{
+		transform: scaleX(1);
+	}
+	.prcard{
+		background-color: #A7A7A7;
+	}
+}
+*/

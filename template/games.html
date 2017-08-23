@@ -1,0 +1,4 @@
+<div class="inner cover" id="games" ng-controller="gamesController as gc">
+	<p class="lead" translate>MADEWITH.UNITY</p>
+	<ng-include src="'template/projectcard.html'" ng-repeat = "p in gc.gameList"></ng-include>
+</div>
