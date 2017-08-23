@@ -27,7 +27,9 @@
                     {{e.year}}
                 </div>
                 <div class="curr-content">
-                    <p><span translate>{{e.description}}</span><span class="desc">.&nbsp;{{e.hours}}Hours</span></p>
+                    <p>
+                        <span translate>{{e.description}}</span>.&nbsp;<span class="desc">{{e.hours}}</span>&nbsp;<span class="desc" translate>CURRIC.COMP_EDUC.HOURS</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -39,7 +41,9 @@
             <div  class="curr-card"  ng-repeat = "e in cc.knowledgeList">
                 <div class="curr-content">
                     <p translate>{{e.category}}</p>
-                    <p ng-repeat = "t in e.tec" class="desc">{{t}}</p>
+                    <div ng-repeat = "t in e.tec" class="desc">
+                        <ng-include src="'template/bar.html'"></ng-include> 
+                    </div>
                 </div>
             </div>
         </div>
