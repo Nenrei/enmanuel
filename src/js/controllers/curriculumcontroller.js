@@ -19,7 +19,7 @@ angular.module("myApp").controller('curriculumController', function() {
 		},
 		{
 			startYear: 2014,
-			endYear: null,
+			endYear: 2017,
             duration: "CURRIC.JOBS.1.DURATION",
 			center: "CURRIC.JOBS.1.CENTER",
 			place: "CURRIC.JOBS.1.PLACE",
@@ -43,17 +43,17 @@ angular.module("myApp").controller('curriculumController', function() {
 		{
 			year: 2014,
 			description: "CURRIC.COMP_EDUC.JAVAEE6",
-			hours: 20
-		},
-		{
-			year: 2015,
-			description: "CURRIC.COMP_EDUC.PATTERNS",
-			hours: 15
+			hours: "20"
 		},
 		{
 			year: 2016,
 			description: "CURRIC.COMP_EDUC.ANGULAR",
-			hours: 20
+			hours: "20"
+		},
+		{
+			year: 2017,
+			description: "CURRIC.COMP_EDUC.UNITY",
+			hours: "21,5"
 		}
 	];
 
@@ -61,21 +61,72 @@ angular.module("myApp").controller('curriculumController', function() {
 		{
 			category: "CURRIC.KNOWLEDGE.FRONT",
 			tec: [
-                "HTML5, CSS3 (SASS, Bootstrap3)",
-                "Javascript (AngularJS 1.5, ExtJS 4.5/6)"
+                {
+                	text: "HTML5",
+                	level: "50"
+                },
+                {
+                	text: "CSS3",
+                	level: "50"
+                },
+                {
+                	text: "AngularJS 1.5",
+                	level: "25"
+                },
+                {
+                	text: "ExtJS 4.5/6",
+                	level: "75"
+                }
             ]
 		},
 		{
 			category: "CURRIC.KNOWLEDGE.BACK",
 			tec: [
-                "JavaSE, JavaEE"
+                {
+                	text:"JavaSE", 
+                	level: "25"
+                },
+                {
+                	text:"JavaEE",
+                	level: "25"
+                },
+                {
+                	text:"C#",
+                	level: "25"
+                }
             ]
 		},
 		{
 			category: "CURRIC.KNOWLEDGE.OTHER",
 			tec: [
-				"Eclipse, Webstorm, SublimeText",
-				"Adobe Photoshop, Flash, Premiere"
+				{
+					text: "Eclipse", 
+					level: "50"
+				},
+				{
+					text: "Webstorm", 
+					level: "50"
+				},
+				{
+					text: "SublimeText",
+					level: "50"
+				},
+				{
+					text: "Photoshop", 
+					level: "75"
+				},
+				{
+					text: "Flash", 
+					level: "25"
+				},
+				{
+					text: "Premiere",
+					level: "50"
+				},
+				{
+					text: "Unity 3D",
+					level: "25"
+				}
 			]
 		}
 

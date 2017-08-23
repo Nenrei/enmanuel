@@ -18,6 +18,10 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
         .when('/curriculum', {
             templateUrl : 'template/curric.html',
             controller  : 'curriculumController'
+        })
+        .when('/media', {
+            templateUrl : 'template/media.html',
+            controller  : 'mediaController'
         });
     
     $locationProvider.html5Mode(true);
@@ -29,6 +33,7 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
             CURRIC: "Curriculum",
             WEB: "Webs",
             GAMES: "Games",
+            GRAPHICS: "Graphic Design",
             LANG: "Language"
         },
         MAIN: {
@@ -97,8 +102,9 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
             ],
             COMP_EDUC: {
                 JAVAEE6: "Application Development with Java EE6",
-                PATTERNS: "Java EE5 Patterns",
                 ANGULAR: "Introduction to AngularJS",
+                UNITY: "Learn Unity 5: from zero to expert",
+                HOURS: "Hours"
             },
             KNOWLEDGE: {
                 FRONT: "Frontend Development",
@@ -121,6 +127,7 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
             CURRIC: "Curriculum",
             WEB: "Webs",
             GAMES: "Juegos",
+            GRAPHICS: "Diseño Gráfico",
             LANG: "Idioma"
         },
         MAIN: {
@@ -189,8 +196,9 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
             ],
             COMP_EDUC: {
                 JAVAEE6: "Desarrollo de Aplicaciones con Java EE6",
-                PATTERNS: "Patrones de Java EE5",
                 ANGULAR: "Introducci&oacute;n a AngularJS",
+                UNITY: "Aprende Unity 5: de cero a experto",
+                HOURS: "Horas"
             },
             KNOWLEDGE: {
                 FRONT: "Desarrollo Frontend",
@@ -213,6 +221,7 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
             CURRIC: "Curriculum",
             WEB: "Webs",
             GAMES: "Xogos",
+            GRAPHICS: "Deseño Gráfico",
             LANG: "Idioma"
         },
         MAIN: {
@@ -281,8 +290,9 @@ angular.module("myApp").config(function($routeProvider, $locationProvider, $tran
             ],
             COMP_EDUC: {
                 JAVAEE6: "Desenvolvemento de Aplicacións con Java EE6",
-                PATTERNS: "Patróns de Java EE5",
                 ANGULAR: "Introducci&oacute;n a AngularJS",
+                UNITY: "Aprende Unity 5: de cero a experto",
+                HOURS: "Horas"
             },
             KNOWLEDGE: {
                 FRONT: "Desenvolvemento Frontend",
@@ -320,7 +330,7 @@ angular.module("myApp").controller('mainController', function() {
 angular.module("myApp").controller('menuController', function($translate) {
 
     var me = this;
-    me.currLang = 'en';
+    me.currLang = 'es';
 
     me.changeLanguage = function (langKey) {
         me.currLang = langKey;
